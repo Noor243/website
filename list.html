@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>list</title>
+
+  
+
+
+
+
+
+<style>
+/* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../icon/check_small_FILL0_wght400_GRAD0_opsz24.svg);
+  padding-left: 3rem;
+  color: var(--color-headings);
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
+</style>
+
+</head>
+<body>
+
+
+<section>
+  <ul class="list list--tick">
+
+    <!-- ul.list>li{item $}*3 -->
+    <li class="list__item">Unlimited Websites</li> 
+    <li class="list__item">Unlimited Bandwidth</li> 
+    <li class="list__item">100 GB SSD Sotrage</li>
+     <li class="list__item">3 GB RAM</li> 
+   </ul>
+   </section>
+
+  
+  </body>
+  </html>

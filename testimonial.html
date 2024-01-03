@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial</title>
+<style>
+
+
+
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+  /* Testimonials */
+
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial .quote {
+  margin: 2rem 0;
+  font-size: 110%;
+}
+
+.testimonial__image {
+  width:100%;
+  position: relative;
+  margin: 0 3rem;
+}
+
+.testimonial__image>.icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial__image {
+    margin: 0;
+  }
+  .testimonial .quote {
+    margin: 5rem 0 0 6rem;
+    font-size: 120%;
+    line-height: 1.5;
+  }
+}
+</style>
+</head>
+<body style="padding: 7rem">
+  
+  <!-- Testimonials are a powerful way of building trust and credibility for a product, service, or brand. They can be used to showcase the positive feedback, reviews, or experiences of satisfied customers or clients on a web page. -->
+
+
+<div class="card testimonial">
+  <div class="grid grid--1x2">
+    <div class="testimonial__image">
+      <image src="images/testimonial.ad9df737.jpg" alt="Happy Person">
+        <span class="icon-container">
+          <svg class="icon icon--primary">
+            <use xlink:href="images/sprite.svg#wordpress">
+              </use>
+              </svg></span>
+             
+              
+              </div>
+
+              <div>
+
+                <blockquote class="quote">
+
+
+                  <p class="quote__text">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia eum. Officia dolorem natus velit adipisci aperiam impedit hic perspiciatis
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt laboriosam praesentium, molestiae quae hic eos incidunt expedita? Incidunt consequuntur doloribus recusandae dolores sequi ipsum id, modi ad esse vitae eius!
+              lorem
+                    </p>
+                  
+                </blockquote>
+              </div>
+    </div>
+
+ 
+
+
+    
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

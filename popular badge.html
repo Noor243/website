@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>plans</title>
+
+<style>
+
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --border-radius: 30px;
+  
+}
+
+
+
+ /* Cards */
+
+ .card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+  }
+  
+  .card__header, .card__body {
+    padding: 2rem 7%;
+  }
+  
+  .card--primary .card__header {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  
+  .card--secondary .card__header {
+    background: var(--color-secondary);
+    color: #fff;
+  }
+  
+  .card--primary .badge--primary {
+    background: #126de4;
+  }
+  
+  .card--secondary .badge--secondary {
+    background: #02cdf1;
+  }
+
+
+
+/* Plans */
+
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
+.plan__name {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.plan__price {
+  font-size: 3rem;
+}
+
+.plan__billing-cycle {
+  font-size: 2rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+
+.plan--popular .card__header::before {
+  content: url(../images/logo.png);
+ width: 40px;
+ display:inline-block;
+ position: absolute;
+ top: 0;
+ right: 5%;
+}
+
+/* 
+.plan--popular ::before {
+  content: url(../images/logo.png);
+ width: 40px;
+ display:inline-block;
+ position: absolute;
+ top: 0;
+ right: 5%;
+} */
+
+
+
+.plan--popular .card__header::before {
+  content: url(../images/popular.svg);
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 1024px) {
+  .plan--popular {
+    transform: scale(1.1);
+  }
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+  .plan__description {
+    font-size: 1.7rem;
+  }
+}
+
+
+  /* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+  
+
+
+
+
+
+  </style>
+
+
+</head>
+<body>
+  <!-- cards -->
+  <div style="width: 40%;padding: 4rem;">
+    <!-- card plan -->
+    <div class="plan">
+    <div class="card card--primary">
+    <header class="card__header">
+
+      <!-- popular badge -->
+<img class="plan plan--popular"src="images/popular.svg" alt="popular image"/>
+
+
+<h3 class="plan__name">Entry</h3>
+
+<span class="plan__price">$14</span>
+<span class="plan__billing-cycle">/month</span>
+<span class="badge badge--secondary badge--small">10% OFF</span>
+<span class="plan__description">Easy start on the cloud</span>
+    </header>
+    <!-- card list -->
+    <div class="card__body">  <ul class="list list--tick">
+
+     
+      <li class="list__item">Unlimited Websites</li> 
+      <li class="list__item">Unlimited Bandwidth</li> 
+      <li class="list__item">100 GB SSD Sotrage</li>
+       <li class="list__item">3 GB RAM</li> 
+     </ul>
+     <!-- card button -->
+    <button class="btn btn--outline btn--block">Buy Now
+    </div>
+    </div>
+
+</body>
+</html>

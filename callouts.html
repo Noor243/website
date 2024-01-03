@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callout</title>
+
+<style>
+
+
+
+
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --border-radius: 30px;
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  outline: 0;
+  padding: 2rem 4vw;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Buttons */
+
+
+
+
+
+
+
+
+/* 
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+
+
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+ */
+
+
+
+/* Callouts */
+
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout__content {
+    text-align: left;
+  }
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+}
+
+
+  </style>
+
+</head>
+
+
+<body>
+  
+<div class="callout callout--primary">
+ <div class="grid grid--1x2">
+  <div class="callout__content">
+    <h2 class="callout__heading">
+      Ready to get started?
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis officia fugiat quo sed, saepe, incidunt quasi magni consectetur sit illum quidem qui reiciendis voluptates suscipit iure illo, nulla enim quas.
+    </p>
+  </div>
+  <a href="#" class="btn btn--secondary btn--stretched">Get started</a>
+ </div>
+
+
+</div>
+
+
+</body>
+</html>

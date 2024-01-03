@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cards</title>
+
+<style>
+
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --border-radius: 30px;
+  
+}
+
+
+
+  /* Cards */
+
+  .card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+  }
+  
+  .card__header, .card__body {
+    padding: 2rem 7%;
+  }
+  
+  .card--primary .card__header {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  
+  .card--secondary .card__header {
+    background: var(--color-secondary);
+    color: #fff;
+  }
+  
+  .card--primary .badge--primary {
+    background: #126de4;
+  }
+  
+  .card--secondary .badge--secondary {
+    background: #02cdf1;
+  }
+  
+
+  </style>
+
+</head>
+<body>
+  <div style="width: 30%;padding: 4rem;">
+<div class="card card--primary">
+<header class="card__header">card Title</header>
+
+<div class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia assumenda quod fuga iste, vero tempora dolorum praesentium, ex veniam harum, dolorem molestiae a nam quibusdam repellat inventore ratione corporis cum?</div>
+</div>
+
+
+</body>
+</html>

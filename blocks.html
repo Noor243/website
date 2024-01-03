@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blocks</title>
+
+<style>
+
+.block {
+  --padding-vertical: 5rem;
+  padding: var(--padding-vertical) 2rem;
+  border: 2px solid red;
+}
+
+.block__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background: #000;
+  color: #7b858b;
+}
+
+.block--dark h1, .block--dark h2, .block--dark h3 {
+  color: #fff;
+}
+
+.block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+}
+
+.block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+
+
+
+/* color palette */
+
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --border-radius: 30px;
+  
+}
+
+  </style>
+
+</head>
+<body>
+  
+<section class="block">
+<h2 class="block__heading">Heading</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, veritatis! Ad unde nesciunt, molestias iste vitae, quae quibusdam numquam libero, nihil corporis non officia sed. Quod eligendi suscipit nesciunt nisi?</p>
+  </section>
+
+
+  <section class="block block--dark block--skewed-right">
+    <h2 class="block__heading">Heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, veritatis! Ad unde nesciunt, molestias iste vitae, quae quibusdam numquam libero, nihil corporis non officia sed. Quod eligendi suscipit nesciunt nisi?</p>
+      </section>
+    
+
+
+
+</body>
+</html>
